@@ -7,8 +7,8 @@ for i in range (num):
     try:
          n = int(input("Ingrese un numero: "))
          numeros.append(n)
-    except:
-        print("Ingrese solo numeros enteros por favor")
+    except ValueError:
+        print("Ingrese solo numeros por favor")
         n = int(input("Ingrese un numero: "))
         numeros.append(n)
    

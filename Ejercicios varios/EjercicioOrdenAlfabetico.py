@@ -1,14 +1,15 @@
 palabras=[]
 palabra = str(input("Ingrese palabras, para salir ingrese 'exit': "))
 while palabra != "exit":
-    if palabra.isalpha == True:
-        palabras.append(palabra)
-        palabra = str(input("Ingrese palabras, para salir ingrese 'exit': "))
-    else:        
-        print("Ingrese solo palabras por favor!")
-        palabras.append(palabra)
-        palabra = str(input("Ingrese palabras, para salir ingrese 'exit': "))
+    try:
+        if palabra.isalpha:
+            palabras.append(palabra)
+            palabra = str(input("Ingrese palabras, para salir ingrese 'exit': "))
+        else:        
+            print("Ingrese solo palabras")
     
+    except:
+        print("")
 
 print("\n")
 print("Palabras ordenadas alfabeticamente")
