@@ -1,8 +1,5 @@
 #Ejercicio 9 - Belen Camargo
 
-
-
-
 print("---CALCULADORA BASICA---")
 print(" 1 - SUMA ")
 print(" 2 - RESTA ")
